@@ -23,6 +23,17 @@
     <script src="js/app.js"></script>
 </head>
 <body ng-app="sampleApp" ng-controller="NerdController">
+<div ng-app="BasicChat">
+    <div ng-controller="chat">
+        <div ng-repeat="message in messages">
+            <strong>:</strong>
+            <span></span>
+        </div>
+        <form ng-submit="send()">
+            <input ng-model="textbox">
+        </form>
+    </div>
+</div>
 <div class="container">
 
     <!-- HEADER -->
